@@ -1,6 +1,6 @@
 import redis, logging, time, os
 from redis.commands.json.path import Path
-from typing import Optional, Any
+from typing import Optional, Union, Any
 
 
 class MyRedis(redis.Redis):
@@ -84,10 +84,28 @@ class MyRedis(redis.Redis):
                 print(err)
             self._logger.error(err)
             return None
+    
+    
+    def pub(self, ch: Union[bytes, str, memoryview], msg: Union[str, int, float, bytes]) -> None:
+        self.publish(channel= ch, message= msg)
+        
+        
+    def sub(self, ch):
+        # pupsub = self.pubsub()
+        # pupsub.subscribe(ch)
+        self.pubsub().subscribe(ch)
+        
+        return self.pubsub().listen()['data']
             
 
 if __name__ == "__main__":
     myRedis = MyRedis(pwd= "admin")
+    # while True:
+    #     msgs = input('Enter msgs: ')
+    #     myRedis.pub(ch= 'myCh', msg= msgs)
+    print(myRedis.sub('myCh'))
+    time.sleep(1)
+
     
     
     

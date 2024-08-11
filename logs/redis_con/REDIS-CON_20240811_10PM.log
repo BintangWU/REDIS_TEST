@@ -1,6 +1,0 @@
-[2024-08-11 22:04:11,101] INFO: Begin connection!!!
-[2024-08-11 22:06:33,739] INFO: Begin connection!!!
-[2024-08-11 22:06:33,753] ERROR: Existing key has wrong Redis type
-[2024-08-11 22:09:40,720] INFO: Begin connection!!!
-[2024-08-11 22:09:40,730] ERROR: Existing key has wrong Redis type
-[2024-08-11 22:10:44,568] INFO: Begin connection!!!
