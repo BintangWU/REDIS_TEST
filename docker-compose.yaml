@@ -1,0 +1,21 @@
+version: "3"
+services:
+  redis:
+    container_name: redis
+    image: redis/redis-stack:6.2.6-v5
+    restart: always
+    ports:
+      - 6379:6379
+      - 8001:8001
+    volumes:
+      - ./data/redis:/data:rw
+    environment:
+      - REDIS_ARGS= --requirepass admin
+    healthcheck:
+      test: [ "CMD", "redis-cli", "--raw", "incr", "ping" ]
+      interval: 20s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+  
+  
