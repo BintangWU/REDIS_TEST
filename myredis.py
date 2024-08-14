@@ -6,6 +6,7 @@ from typing import Optional, Union, Any
 class MyRedis(redis.Redis):
     def __init__(self, host: str = 'localhost', port: int = 6379, user: Optional[str] = None, pwd: Optional[str] = None, debug: bool = False) -> None:
         super().__init__(host= host, port= port, username= user, password= pwd, decode_responses= True)
+        self._pubsub = self.pubsub()
         
         self._time = time.strftime("%Y%m%d_%I%p")
         self._log_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'logs/redis_con')
@@ -28,7 +29,6 @@ class MyRedis(redis.Redis):
         self._logger.addHandler(self._console)
         self._logger.info("Begin connection!!!")
         
-        # self.redis_con = redis.Redis(host= host, port= port, username= user, password= pwd, decode_responses= True)
         self._debug = debug
         
         
@@ -39,8 +39,21 @@ class MyRedis(redis.Redis):
     
     # Write string data to Redis (write adn update)
     # print(myRedis.set_string("HELO", "WORLD"))
-    def set_string(self, key: str, value: str) -> bool:
-        return self.set(key, value)
+    def set_value(self, *args) -> bool:
+        try: 
+            if len(args) == 1 and isinstance(args[0], dict):
+                return self.mset(args[0])
+            elif len(args) == 2:
+                if not isinstance(args[0], dict):
+                    return self.set(args[0], args[1])
+                else:
+                    raise Exception(f"Sorry, the value of args[0]) is {type(args[0])}")
+            else:
+                raise Exception("Sorry, set_value(*args) out of range!")
+
+        except Exception as err:
+            self._logger.error(err)
+            return None
     
 
     # Write json data to Redis
@@ -53,17 +66,16 @@ class MyRedis(redis.Redis):
 
 
     # Read string data from Redis
-    def get_string(self, key: str) -> str:
-        try:
-            data = self.get(key)
-            if data is None:
-                raise Exception(f"Value from \"{key}\" is None")
+    def get_value(self, *args) -> Any:
+        data = None
+        try: 
+            if len(args) == 1:
+                data = self.get(args[0])
             else:
-                return data
-            
+                data = self.mget(*args)
+            return data
+        
         except Exception as err:
-            if self._debug:
-                print(err)
             self._logger.error(err)
             return None
 
@@ -90,21 +102,26 @@ class MyRedis(redis.Redis):
         self.publish(channel= ch, message= msg)
         
         
-    def sub(self, ch):
-        # pupsub = self.pubsub()
-        # pupsub.subscribe(ch)
-        self.pubsub().subscribe(ch)
+    # def sub(self, ch):
+    #     self._pubsub.subscribe(ch)
+    #     return self._pubsub.listen()['data']
+    
+class Async_MyRedis(redis.asyncio.Redis):
+    def __init__(self, host: str = 'localhost', port: int = 6379, user: Optional[str] = None, pwd: Optional[str] = None, debug: bool = False) -> None:
+        super().__init__(host= host, port= port, username= user, password= pwd, decode_responses= True)    
         
-        return self.pubsub().listen()['data']
-            
 
 if __name__ == "__main__":
     myRedis = MyRedis(pwd= "admin")
-    # while True:
-    #     msgs = input('Enter msgs: ')
-    #     myRedis.pub(ch= 'myCh', msg= msgs)
-    print(myRedis.sub('myCh'))
-    time.sleep(1)
+    
+    dict_data = {
+        "employee_name": "Adam Adams",
+        "employee_age": 30,
+        "position": "Software Engineer",
+    }
+    # myRedis.set_value("aloha", dict_data)
+
+
 
     
     

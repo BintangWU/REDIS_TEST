@@ -35,7 +35,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\__TEST__\@DATABASE\env"
+VIRTUAL_ENV="D:\__TEST__\__PYTHON__\@DATABASE\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
