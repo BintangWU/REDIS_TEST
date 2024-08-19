@@ -1,28 +1,32 @@
+# Subscriber (Viewer) Side
+import cv2
+import numpy as np
 import redis
 
-r = redis.Redis(password= 'admin', decode_responses= True)
+# Create Redis connection
+redis_connection = redis.StrictRedis(host='localhost', port=6379, password= 'admin',db=0)
 
-def redis_set(*args):
-    if len(args) == 1 and isinstance(args[0], dict):
-        # print(args[0])
-        r.mset(args[0])
-    elif len(args) == 2:
-        if not isinstance(args[0], dict):
-            # print(args[0], args[1])
-            r.set(args[0], args[1])
-        else:
-            raise Exception(f"Sorry, the value of args[0]) is {type(args[0])}")
-    else:
-        raise Exception("Sorry, redis_set(*args) out of range ")
+# Subscribe to a specific channel
+def subscribe_to_camera(id):
+    pubsub = redis_connection.pubsub()
+    pubsub.subscribe(f'cam{id}:img')
 
-def redis_get(*args):
-    print(r.mget(*args))
+    for message in pubsub.listen():
+        if message['type'] == 'message':
+            # Convert the byte stream back into a numpy array
+            image_bytes = message['data']
+            np_arr = np.frombuffer(image_bytes, np.uint8)
 
-dict_data = {
-        "employee_name": "Adam ams",
-        "employee_age": 30,
-        "position": "Software Engineer",
-    }
+            # Decode the image
+            image = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
+            
+            if image is not None:
+                # Display the image or process it
+                cv2.imshow(f'Camera {id} Stream', image)
+                cv2.waitKey(1)
+            else:
+                print("Failed to decode image")
 
 if __name__ == '__main__':
-    redis_get("employee_name", "employee_age", "position", "non_existing")
+    subscribe_to_camera(1)
+# subscribe_to_camera(1)

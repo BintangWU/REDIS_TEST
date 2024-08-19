@@ -1,0 +1,248 @@
+[2024-08-19 22:08:16,387] INFO: Begin connection!!!
+[2024-08-19 22:12:17,424] INFO: Begin connection!!!
+[2024-08-19 22:22:23,208] INFO: Begin connection!!!
+[2024-08-19 22:22:32,944] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<ComputerVision.publish_image() done, defined at D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py:18> exception=error("OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'\n> Overload resolution failed:\n>  - buf is not a numpy array, neither a scalar\n>  - Expected Ptr<cv::UMat> for argument 'buf'\n")>
+Traceback (most recent call last):
+  File "D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py", line 19, in publish_image
+    stat, bts = cv.imdecode('.png', img)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'
+> Overload resolution failed:
+>  - buf is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'buf'
+
+[2024-08-19 22:22:34,634] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<ComputerVision.publish_image() done, defined at D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py:18> exception=error("OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'\n> Overload resolution failed:\n>  - buf is not a numpy array, neither a scalar\n>  - Expected Ptr<cv::UMat> for argument 'buf'\n")>
+Traceback (most recent call last):
+  File "D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py", line 19, in publish_image
+    stat, bts = cv.imdecode('.png', img)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'
+> Overload resolution failed:
+>  - buf is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'buf'
+
+[2024-08-19 22:22:36,144] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-4' coro=<ComputerVision.publish_image() done, defined at D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py:18> exception=error("OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'\n> Overload resolution failed:\n>  - buf is not a numpy array, neither a scalar\n>  - Expected Ptr<cv::UMat> for argument 'buf'\n")>
+Traceback (most recent call last):
+  File "D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py", line 19, in publish_image
+    stat, bts = cv.imdecode('.png', img)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'
+> Overload resolution failed:
+>  - buf is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'buf'
+
+[2024-08-19 22:22:37,622] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-5' coro=<ComputerVision.publish_image() done, defined at D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py:18> exception=error("OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'\n> Overload resolution failed:\n>  - buf is not a numpy array, neither a scalar\n>  - Expected Ptr<cv::UMat> for argument 'buf'\n")>
+Traceback (most recent call last):
+  File "D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py", line 19, in publish_image
+    stat, bts = cv.imdecode('.png', img)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'
+> Overload resolution failed:
+>  - buf is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'buf'
+
+[2024-08-19 22:22:39,099] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-6' coro=<ComputerVision.publish_image() done, defined at D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py:18> exception=error("OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'\n> Overload resolution failed:\n>  - buf is not a numpy array, neither a scalar\n>  - Expected Ptr<cv::UMat> for argument 'buf'\n")>
+Traceback (most recent call last):
+  File "D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py", line 19, in publish_image
+    stat, bts = cv.imdecode('.png', img)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'
+> Overload resolution failed:
+>  - buf is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'buf'
+
+[2024-08-19 22:22:40,567] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<ComputerVision.publish_image() done, defined at D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py:18> exception=error("OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'\n> Overload resolution failed:\n>  - buf is not a numpy array, neither a scalar\n>  - Expected Ptr<cv::UMat> for argument 'buf'\n")>
+Traceback (most recent call last):
+  File "D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py", line 19, in publish_image
+    stat, bts = cv.imdecode('.png', img)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'
+> Overload resolution failed:
+>  - buf is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'buf'
+
+[2024-08-19 22:22:42,082] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-8' coro=<ComputerVision.publish_image() done, defined at D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py:18> exception=error("OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'\n> Overload resolution failed:\n>  - buf is not a numpy array, neither a scalar\n>  - Expected Ptr<cv::UMat> for argument 'buf'\n")>
+Traceback (most recent call last):
+  File "D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py", line 19, in publish_image
+    stat, bts = cv.imdecode('.png', img)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'
+> Overload resolution failed:
+>  - buf is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'buf'
+
+[2024-08-19 22:22:43,571] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<ComputerVision.publish_image() done, defined at D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py:18> exception=error("OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'\n> Overload resolution failed:\n>  - buf is not a numpy array, neither a scalar\n>  - Expected Ptr<cv::UMat> for argument 'buf'\n")>
+Traceback (most recent call last):
+  File "D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py", line 19, in publish_image
+    stat, bts = cv.imdecode('.png', img)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'
+> Overload resolution failed:
+>  - buf is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'buf'
+
+[2024-08-19 22:22:45,246] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-10' coro=<ComputerVision.publish_image() done, defined at D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py:18> exception=error("OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'\n> Overload resolution failed:\n>  - buf is not a numpy array, neither a scalar\n>  - Expected Ptr<cv::UMat> for argument 'buf'\n")>
+Traceback (most recent call last):
+  File "D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py", line 19, in publish_image
+    stat, bts = cv.imdecode('.png', img)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'
+> Overload resolution failed:
+>  - buf is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'buf'
+
+[2024-08-19 22:22:45,269] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<ComputerVision.publish_image() done, defined at D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py:18> exception=error("OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'\n> Overload resolution failed:\n>  - buf is not a numpy array, neither a scalar\n>  - Expected Ptr<cv::UMat> for argument 'buf'\n")>
+Traceback (most recent call last):
+  File "D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py", line 19, in publish_image
+    stat, bts = cv.imdecode('.png', img)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'
+> Overload resolution failed:
+>  - buf is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'buf'
+
+[2024-08-19 22:23:05,904] INFO: Begin connection!!!
+[2024-08-19 22:23:16,754] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<ComputerVision.publish_image() done, defined at D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py:18> exception=error("OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'\n> Overload resolution failed:\n>  - buf is not a numpy array, neither a scalar\n>  - Expected Ptr<cv::UMat> for argument 'buf'\n")>
+Traceback (most recent call last):
+  File "D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py", line 19, in publish_image
+    stat, bts = cv.imdecode('.png', img)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'
+> Overload resolution failed:
+>  - buf is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'buf'
+
+[2024-08-19 22:23:18,421] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<ComputerVision.publish_image() done, defined at D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py:18> exception=error("OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'\n> Overload resolution failed:\n>  - buf is not a numpy array, neither a scalar\n>  - Expected Ptr<cv::UMat> for argument 'buf'\n")>
+Traceback (most recent call last):
+  File "D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py", line 19, in publish_image
+    stat, bts = cv.imdecode('.png', img)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'
+> Overload resolution failed:
+>  - buf is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'buf'
+
+[2024-08-19 22:23:19,924] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-4' coro=<ComputerVision.publish_image() done, defined at D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py:18> exception=error("OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'\n> Overload resolution failed:\n>  - buf is not a numpy array, neither a scalar\n>  - Expected Ptr<cv::UMat> for argument 'buf'\n")>
+Traceback (most recent call last):
+  File "D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py", line 19, in publish_image
+    stat, bts = cv.imdecode('.png', img)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'
+> Overload resolution failed:
+>  - buf is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'buf'
+
+[2024-08-19 22:23:21,389] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-5' coro=<ComputerVision.publish_image() done, defined at D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py:18> exception=error("OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'\n> Overload resolution failed:\n>  - buf is not a numpy array, neither a scalar\n>  - Expected Ptr<cv::UMat> for argument 'buf'\n")>
+Traceback (most recent call last):
+  File "D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py", line 19, in publish_image
+    stat, bts = cv.imdecode('.png', img)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'
+> Overload resolution failed:
+>  - buf is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'buf'
+
+[2024-08-19 22:23:22,865] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-6' coro=<ComputerVision.publish_image() done, defined at D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py:18> exception=error("OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'\n> Overload resolution failed:\n>  - buf is not a numpy array, neither a scalar\n>  - Expected Ptr<cv::UMat> for argument 'buf'\n")>
+Traceback (most recent call last):
+  File "D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py", line 19, in publish_image
+    stat, bts = cv.imdecode('.png', img)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'
+> Overload resolution failed:
+>  - buf is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'buf'
+
+[2024-08-19 22:23:24,476] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<ComputerVision.publish_image() done, defined at D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py:18> exception=error("OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'\n> Overload resolution failed:\n>  - buf is not a numpy array, neither a scalar\n>  - Expected Ptr<cv::UMat> for argument 'buf'\n")>
+Traceback (most recent call last):
+  File "D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py", line 19, in publish_image
+    stat, bts = cv.imdecode('.png', img)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'
+> Overload resolution failed:
+>  - buf is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'buf'
+
+[2024-08-19 22:23:26,021] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-8' coro=<ComputerVision.publish_image() done, defined at D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py:18> exception=error("OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'\n> Overload resolution failed:\n>  - buf is not a numpy array, neither a scalar\n>  - Expected Ptr<cv::UMat> for argument 'buf'\n")>
+Traceback (most recent call last):
+  File "D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py", line 19, in publish_image
+    stat, bts = cv.imdecode('.png', img)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'
+> Overload resolution failed:
+>  - buf is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'buf'
+
+[2024-08-19 22:23:27,486] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<ComputerVision.publish_image() done, defined at D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py:18> exception=error("OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'\n> Overload resolution failed:\n>  - buf is not a numpy array, neither a scalar\n>  - Expected Ptr<cv::UMat> for argument 'buf'\n")>
+Traceback (most recent call last):
+  File "D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py", line 19, in publish_image
+    stat, bts = cv.imdecode('.png', img)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'
+> Overload resolution failed:
+>  - buf is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'buf'
+
+[2024-08-19 22:23:28,941] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-10' coro=<ComputerVision.publish_image() done, defined at D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py:18> exception=error("OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'\n> Overload resolution failed:\n>  - buf is not a numpy array, neither a scalar\n>  - Expected Ptr<cv::UMat> for argument 'buf'\n")>
+Traceback (most recent call last):
+  File "D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py", line 19, in publish_image
+    stat, bts = cv.imdecode('.png', img)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'
+> Overload resolution failed:
+>  - buf is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'buf'
+
+[2024-08-19 22:23:28,978] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<ComputerVision.publish_image() done, defined at D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py:18> exception=error("OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'\n> Overload resolution failed:\n>  - buf is not a numpy array, neither a scalar\n>  - Expected Ptr<cv::UMat> for argument 'buf'\n")>
+Traceback (most recent call last):
+  File "D:\__TEST__\__PYTHON__\@DATABASE\computerVision.py", line 19, in publish_image
+    stat, bts = cv.imdecode('.png', img)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'imdecode'
+> Overload resolution failed:
+>  - buf is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'buf'
+
+[2024-08-19 22:24:19,298] INFO: Begin connection!!!
+[2024-08-19 22:25:46,066] INFO: Begin connection!!!
+[2024-08-19 22:27:30,068] INFO: Begin connection!!!
+[2024-08-19 22:29:04,227] INFO: Begin connection!!!
+[2024-08-19 22:32:00,325] INFO: Begin connection!!!
+[2024-08-19 22:37:34,621] INFO: Begin connection!!!
+[2024-08-19 22:38:22,825] INFO: Begin connection!!!
+[2024-08-19 22:39:50,972] INFO: Begin connection!!!
+[2024-08-19 22:40:12,592] INFO: Begin connection!!!
+[2024-08-19 22:40:37,056] INFO: Begin connection!!!
+[2024-08-19 22:40:58,480] INFO: Begin connection!!!
+[2024-08-19 22:43:49,466] INFO: Begin connection!!!
+[2024-08-19 22:46:15,802] INFO: Begin connection!!!
+[2024-08-19 22:47:54,309] INFO: Begin connection!!!
+[2024-08-19 22:50:49,685] INFO: Begin connection!!!
+[2024-08-19 22:51:48,833] INFO: Begin connection!!!
+[2024-08-19 22:52:22,050] INFO: Begin connection!!!
+[2024-08-19 22:52:47,417] INFO: Begin connection!!!
+[2024-08-19 22:53:43,572] INFO: Begin connection!!!
+[2024-08-19 22:54:17,793] INFO: Begin connection!!!
+[2024-08-19 22:56:31,443] INFO: Begin connection!!!
+[2024-08-19 22:57:14,293] INFO: Begin connection!!!
+[2024-08-19 22:57:49,271] INFO: Begin connection!!!
+[2024-08-19 22:58:42,252] INFO: Begin connection!!!

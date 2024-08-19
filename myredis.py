@@ -1,11 +1,15 @@
+'''
+File ini digunakan untuk mengelola komunikasi dengan Redis
+'''
+
 import redis, logging, time, os
 from redis.commands.json.path import Path
 from typing import Optional, Union, Any
 
 
 class MyRedis(redis.Redis):
-    def __init__(self, host: str = 'localhost', port: int = 6379, user: Optional[str] = None, pwd: Optional[str] = None, debug: bool = False) -> None:
-        super().__init__(host= host, port= port, username= user, password= pwd, decode_responses= True)
+    def __init__(self, host: str = 'localhost', port: int = 6379, username: Optional[str] = None, password: Optional[str] = None, debug: bool = False) -> None:
+        super().__init__(host= host, port= port, username= username, password= password, decode_responses= True)
         self._pubsub = self.pubsub()
         
         self._time = time.strftime("%Y%m%d_%I%p")
@@ -38,7 +42,6 @@ class MyRedis(redis.Redis):
     
     
     # Write string data to Redis (write adn update)
-    # print(myRedis.set_string("HELO", "WORLD"))
     def set_value(self, *args) -> bool:
         try: 
             if len(args) == 1 and isinstance(args[0], dict):
@@ -112,7 +115,7 @@ class Async_MyRedis(redis.asyncio.Redis):
         
 
 if __name__ == "__main__":
-    myRedis = MyRedis(pwd= "admin")
+    myRedis = MyRedis(password= "admin")
     
     dict_data = {
         "employee_name": "Adam Adams",
